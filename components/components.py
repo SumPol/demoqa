@@ -20,3 +20,9 @@ class WebElement:
         except NoSuchElementException:
             return False
         return True
+
+    def get_text(self):
+        return str(self.find_element().text)
+
+    def equal_text(self, comparison_text):
+        return self.get_text() == comparison_text
