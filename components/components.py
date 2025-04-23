@@ -26,3 +26,6 @@ class WebElement:
 
     def equal_text(self, comparison_text):
         return self.get_text() == comparison_text
+
+    def visible(self):
+        return self.find_element().is_displayed()
