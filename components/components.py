@@ -67,15 +67,15 @@ class WebElement:
     def get_by_type(self):
         if self.locator_type == 'id':
             return By.ID
-        elif self.locator_type == 'name'
+        elif self.locator_type == 'name':
             return By.NAME
-        elif self.locator_type == 'xpath'
+        elif self.locator_type == 'xpath':
             return By.XPATH
-        elif self.locator_type == 'css'
+        elif self.locator_type == 'css':
             return By.CSS_SELECTOR
-        elif self.locator_type == 'class'
+        elif self.locator_type == 'class':
             return By.CLASS_NAME
-        elif self.locator_type == 'link'
+        elif self.locator_type == 'link':
             return By.LINK_TEXT
         else:
             print('Locator type ' + self.locator_type + ' not correct')
