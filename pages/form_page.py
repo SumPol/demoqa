@@ -20,3 +20,9 @@ class FormPage(BasePage):
 
         self.hobbies_sports = WebElement(driver, '#hobbies-checkbox-1')
         self.current_address = WebElement(driver, '#currentAddress')
+
+        self.user_form = WebElement(driver, '#userForm')
+        self.select_state = WebElement(driver, '#state')
+        self.select_state_option = WebElement(driver, "//div[contains(text(), 'Haryana')]", locator_type='xpath')
+        self.select_city = WebElement(driver, '#stateCity-wrapper > div:nth-child(3)')
+        self.select_city_option = WebElement(driver, "//div[text()='Karnal']", locator_type='xpath')

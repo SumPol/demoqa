@@ -80,3 +80,7 @@ class WebElement:
         else:
             print('Locator type ' + self.locator_type + ' not correct')
         return False
+
+    def get_value_after_colon(self):
+        parts = self.get_text().split(':')
+        return parts[1].strip() if len(parts) > 1 else ''
