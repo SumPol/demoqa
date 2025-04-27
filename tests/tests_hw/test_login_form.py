@@ -2,7 +2,7 @@ from pages.form_page import  FormPage
 import time
 
 
-def test_login_form(browser):
+def test_fill_state_city(browser):
     form_page = FormPage(browser)
 
     form_page.visit()
