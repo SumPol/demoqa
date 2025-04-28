@@ -26,3 +26,8 @@ class FormPage(BasePage):
         self.select_state_option = WebElement(driver, "//div[contains(text(), 'Haryana')]", locator_type='xpath')
         self.select_city = WebElement(driver, '#stateCity-wrapper > div:nth-child(3)')
         self.select_city_option = WebElement(driver, "//div[text()='Karnal']", locator_type='xpath')
+
+        # -----------------------------------------------
+        # Разбор задания из занятия 11 (доп. решения)
+        self.btn_state = WebElement(driver, '#react-select-3-input')
+        self.inp_state = WebElement(driver, '#state > div.css-26l3qy-menu')
