@@ -1,6 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
 
 
 class WebElement:
@@ -87,3 +88,10 @@ class WebElement:
     def get_value_after_colon(self):
         parts = self.get_text().split(':')
         return parts[1].strip() if len(parts) > 1 else ''
+
+    def select_value(self, option: str):
+        return Select(self.find_element()).select_by_value(option)
+
+    def is_disabled(self):
+        value = self.find_element().get_dom_attribute("disabled")
+        return value is not None
