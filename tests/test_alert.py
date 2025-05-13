@@ -15,10 +15,10 @@ def test_alert(browser):
     time.sleep(2)
 
     try:
-        WebDriverWait(browser, 2).until_not(EC.alert_is_present())
-        alert_present = False
-    except TimeoutException:
+        WebDriverWait(browser, 2).until(EC.alert_is_present())
         alert_present = True
+    except TimeoutException:
+        alert_present = False
 
     assert alert_present
 
