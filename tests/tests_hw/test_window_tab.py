@@ -1,5 +1,3 @@
-from selenium.webdriver.common.by import By
-
 from pages.links_page import  Links
 
 
