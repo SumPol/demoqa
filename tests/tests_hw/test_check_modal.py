@@ -1,5 +1,5 @@
 from pages.modal_dialogs import ModalDialogs
-from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
+from selenium.common.exceptions import WebDriverException
 import time
 import pytest
 
