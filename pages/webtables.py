@@ -43,3 +43,5 @@ class WebTables(BasePage):
         self.table_cell = WebElement(driver, '.rt-tbody > div > div > div')
         self.page_number = WebElement(driver, '.-pageJump > input')
         self.total_pages = WebElement(driver, '.-totalPages')
+
+        self.columns = WebElement(driver, '.rt-thead > div > div')
